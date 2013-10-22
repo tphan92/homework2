@@ -1,0 +1,296 @@
+/* reset CSS file to reset browser default styling to a consistent starting point */
+@import url(reset.css);
+
+@import url(http://fonts.googleapis.com/css?family=Quattrocento:400,700);
+@import url(http://fonts.googleapis.com/css?family=Cherry+Cream+Soda);
+
+body {
+	background-image: url(../img/pizza1.jpg);
+	font-family: 'Quattrocento', sans-serif;
+	font-size: 16px;
+	padding: 40px;
+	color: #000;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+
+.container {
+	box-shadow: 4px 4px 10px #555;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #000;
+	width: 75%;
+	background-color: rgba(255,255,255, 0.5);
+}
+
+header {
+	background-color: #1F7A68;
+	margin-top: 10px;
+}
+
+a {
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+a:link,
+a:visited {
+	text-decoration: none;
+	color: #640CAB;
+}
+
+a:hover {
+	border-bottom: 4px solid #640CAB;
+}
+
+nav ul {
+	background-color: #1F7A68;
+	margin-top:5px;
+	margin-left: 10px;
+}
+
+
+
+nav li {
+	display: inline-block;
+	background-color: #00A383;
+}
+
+nav a {
+	display: inline-block;
+	padding: 10px;
+	color: #006A55;
+	font-weight: bold;
+	font-size: 150%;
+	box-shadow: 2px 2px 6px #000;
+	text-decoration: none;
+
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	-ms-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+nav a:link,
+nav a:visited {
+	color: #006A55;
+}
+
+nav a:hover {
+	background-color: #006A55;
+	color: #00A383;
+	box-shadow: 6px 6px 12px #000;
+	border-bottom: none;
+}
+
+
+h1, h2, h3 {
+	font-family: 'Cherry Cream Soda', sans-serif;
+	margin-top: 10px;
+	margin-bottom:10px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+h1 {
+	font-size: 600%;
+	color: #FFF;
+	margin-left: 10px;
+	text-shadow: #000 0.1em 0.1em 0.2em;
+}
+
+h2 {
+	font-size: 275%;
+	color: #006A55;
+	clear: both;
+	border-bottom: 5px solid #00A383;
+}
+
+h3 {
+	font-size: 175%;
+	color: #640CAB;
+
+}
+
+.logo {
+	width: 150px;
+	opacity: 1.0;
+	float: right;
+	margin-right: 1em;
+}
+
+b {
+	font-size: 115%;
+	font-weight: bold;
+}
+
+.pizza {
+	float: right;
+	width: 400px;
+	margin-bottom:5px;
+	box-shadow: 2px 2px 4px #000;
+	margin-left: 10px;
+	opacity: .75;
+
+	-webkit-transition: all 2s;
+	-moz-transition: all 2s;
+	-o-transition: all 2s;
+	-ms-transition: all 2s;
+	transition: all 2s;
+}
+
+.pizza:hover {
+	opacity: 1.0;
+
+	transform: rotate(360deg);
+	-ms-transform: rotate(360deg); /* IE 9 */
+	-webkit-transform: rotate(360deg); /* Safari and Chrome */
+}
+
+.menulist li {
+	margin-left: 20px;
+	margin-top:5px;
+	margin-bottom:5px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+dt {
+	font-weight: bold;
+	color: #006A55;
+	font-size: 125%;
+	margin-top: 5px;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+dd {
+	margin-left: 20px;
+	margin-top:5px;
+	margin-bottom:5px;
+	font-style: italic;
+}
+
+em {
+	color: #3F046f;
+	font-weight: bold;
+	font-size: 105%;
+}
+
+aside {
+	background-color: #EEE;
+	border: 3px dotted #CCC;
+	padding: 10px;
+	font-weight: bold;
+	display: inline-block;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	
+}
+
+footer p {
+	color: #006A55;
+	margin-bottom: 1em;
+	margin-right: 1em;
+	font-size: 100%;
+	font-weight: bold;
+	text-shadow: #000 0.1em 0.1em 0.1em;
+	clear: both;
+}
+
+:focus {
+	background-color: #A468D5;
+}
+
+.emphasis {
+	color: #FFF;
+	font-weight: bold;
+	text-shadow: #000 0.1em 0.1em 0.2em;
+	font-size: 120%;
+	font-style: italic;
+}
+
+@media (max-width: 990px) {
+	h1 {
+		clear: both;
+	}
+
+	.pizza {
+		float: none;
+	}
+
+	.logo {
+		width: 125px;
+	}
+}
+
+@media (max-width: 768px) {
+
+
+	.pizza {
+		width: 250px;
+	}
+
+	.logo {
+		width: 100px;
+	}
+
+	body {
+		font-size: 14px;
+	}
+
+	.logo {
+		width: 100px;
+	}
+
+	nav ul {
+		margin-bottom: 10px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	nav li {
+		display: list-item;
+	}
+
+	nav a {
+		display: list-item;
+		font-size: 24px;
+		text-align: center;
+		box-shadow: none;
+		border: 1px solid #1F7A68;
+	}
+
+	h1 {
+		text-align: center;
+		margin-left: 0px;
+	}
+
+	body, p, h1, h2, h3, a, dt, dd, li,
+	.menulist li {
+		margin-left: 0px;
+		text-align: center;
+	}
+}
+
+@media (max-width: 400px) {
+	.pizza {
+		width: 100px;
+	}
+
+	.logo {
+		width: 75px;
+	}
+}
