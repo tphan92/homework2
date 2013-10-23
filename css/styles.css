@@ -294,3 +294,7 @@ footer p {
 		width: 75px;
 	}
 }
+
+iframe {
+	border: 0px;
+}
