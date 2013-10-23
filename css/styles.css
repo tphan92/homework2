@@ -211,8 +211,9 @@ footer p {
 	clear: both;
 }
 
-:focus {
+a:focus {
 	background-color: #A468D5;
+	border: 2px dotted #3F046F;
 }
 
 .emphasis {
